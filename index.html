@@ -9,6 +9,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Hotjar Tracking Code for https://pedantic-clarke-ebf939.netlify.app/ -->
 	<script>
@@ -74,6 +76,16 @@
       });
 
     }
+  </script>
+
+  <script type="module">
+
+  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+  
+  const el = document.createElement('pwa-update');
+  
+  document.body.appendChild(el);
+  
   </script>
 
 </body>
